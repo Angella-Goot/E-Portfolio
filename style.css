@@ -73,6 +73,7 @@ li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .text--purple {
@@ -97,6 +98,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .nav__link--list {
@@ -371,4 +373,72 @@ footer {
 .footer__anchor:hover .footer__logo--popper {
     transform: translateX(60px);
     opacity: 1;
+}
+
+/*Small Phones, Tablets, Large Smartphones */
+@media (max-width: 768px) {
+    nav {
+        height: 68px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .about-me__info--para {
+        font-size: 18px;
+    }
+
+    .row {
+        max-width: 600px;
+    }
+
+}
+
+/*Even smaller phones*/
+
+@media (max-width: 480px) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+    .project__description--title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .project__description {
+        padding-right: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .project__description--subtitle {
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--link {
+        margin: 0 16px;
+    }
+
+    .about-me__img {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1300px) {
+    nav {
+        max-width: 1200px;
+    }
 }
